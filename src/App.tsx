@@ -1,5 +1,3 @@
-import './App.css';
-
 const org = 'kuma-gee';
 const games: { [s: string]: string[] } = {
   'In Development': ['dualist'],
