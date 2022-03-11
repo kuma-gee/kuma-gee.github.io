@@ -42,7 +42,7 @@ function App() {
         <img src="logo.png" alt="logo" className="rounded-full w-1/2 p-4" />
       </header>
 
-      <a href="https://ko-fi.com/L4L8BJI9A" target="_blank">
+      <a href="https://ko-fi.com/L4L8BJI9A" target="_blank" rel="noreferrer">
         <img
           height="36"
           style={{ border: '0px', height: '32px' }}
