@@ -2,22 +2,25 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+enum State {
+  IN_DEVELOPMENT,
+  FINISHED,
+  ADDON,
+}
+
+const games = {
+  [State.IN_DEVELOPMENT]: ['dualist'],
+  [State.FINISHED]: ['suicide-hero', 'robo-soul'],
+  [State.ADDON]: ['godot-css-theme'],
+};
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Kuma Gee</h1>
+        <p>wannabe indie game developer</p>
+        <img src="logo.png" alt="logo" />
       </header>
     </div>
   );
