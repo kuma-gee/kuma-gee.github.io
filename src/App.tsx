@@ -51,7 +51,7 @@ function App() {
         />
       </a>
 
-      <div>{gameItems}</div>
+      <div className="flex flex-col lg:flex-row">{gameItems}</div>
     </div>
   );
 }
