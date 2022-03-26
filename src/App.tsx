@@ -37,7 +37,7 @@ function App() {
       <header className="flex flex-col items-center">
         <h1 className="text-3xl font-bold">Kuma Gee</h1>
         <p>wannabe indie game developer</p>
-        <img src="logo.png" alt="logo" className="rounded-full w-1/2 p-4" />
+        <img src="logo.png" alt="logo" className="rounded-full p-4" width="200" />
       </header>
 
       <a href="https://ko-fi.com/L4L8BJI9A" target="_blank" rel="noreferrer">
