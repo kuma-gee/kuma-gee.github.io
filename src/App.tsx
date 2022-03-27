@@ -1,6 +1,5 @@
 const org = 'kuma-gee';
 const games: { [s: string]: string[] } = {
-  'In Development': ['dualist'],
   Finished: ['robo-soul', 'suicide-hero'],
   Addon: ['godot-css-theme'],
 };
