@@ -10,12 +10,9 @@
         .filter((x) => x !== '')
         .filter((x, i) => i < segments);
 
-      // Prevent infinite reload if path does not exist
       const url = `/${parts.join('/')}`;
-      if (url !== location.pathname) {
-        sessionStorage.redirect = location.href;
-        location.href = url;
-      }
+      sessionStorage.redirect = location.href;
+      location.href = '/';
     </script>
   </head>
 
