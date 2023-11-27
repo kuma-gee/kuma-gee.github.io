@@ -1,29 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import { PolicyLauncher } from './routes/policy-launcher';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { PolicyLauncher } from "./routes/policy-launcher";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    errorElement: <App/>,
+    element: <App />,
+    errorElement: <App />,
   },
   {
     path: "/min-launcher",
-    element: <PolicyLauncher/>
+    element: <PolicyLauncher />,
   },
 ]);
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div className="p-4 max-w-4xl mx-auto">
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 );
 
