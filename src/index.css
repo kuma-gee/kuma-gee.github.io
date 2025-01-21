@@ -6,10 +6,11 @@
 body,
 html {
   height: 100%;
+  @apply bg-slate-950;
 }
 
 @keyframes moveIt {
   to {
-    background-position: 100vw 0;
+    background-position: 800px 0;
   }
 }
