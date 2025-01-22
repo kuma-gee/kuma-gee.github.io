@@ -17,12 +17,13 @@ const games: Game[] = [
     id: 3191960,
     title: "Office Overloaded",
     description:
-      "A typing game where you climb the corporate ladder and global leaderboards.",
+      "A typing game where you climb the corporate ladder and become the next ceo.",
   },
 ];
 
 const socials = [
   "https://kuma-gee.itch.io/",
+  "https://www.instagram.com/kuma_gee/",
   "https://bsky.app/profile/kuma-gee.com",
   "https://discord.gg/k2VP8hygme",
 ];
@@ -59,14 +60,14 @@ function App() {
 
       <div className="flex flex-col gap-4 justify-center items-center p-4 bg-amber-950 bg-opacity-50">
         <h2 className="font-bold text-2xl">Steam Games</h2>
-        <div className="flex gap-8 p-4 flex-col md:flex-row">
+        <div className="flex gap-8 md:gap-12 p-4 flex-col md:flex-row">
           {games.map((game) => (
             <a
               key={game.id}
               href={storeUrl(game.id)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col gap-4 w-60"
+              className="flex flex-col gap-4 w-60 md:w-80"
             >
               <img
                 src={imageUrl(game.id)}
