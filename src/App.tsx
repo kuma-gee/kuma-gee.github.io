@@ -26,6 +26,7 @@ const socials = [
   "https://www.instagram.com/kuma_gee/",
   "https://bsky.app/profile/kuma-gee.com",
   "https://discord.gg/k2VP8hygme",
+  "mailto:kumagee.dev@gmail.com",
 ];
 
 const imageUrl = (id: number) =>
