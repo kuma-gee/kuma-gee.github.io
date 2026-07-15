@@ -4,15 +4,8 @@
     <meta charset="utf-8" />
     <title>Not Found</title>
     <script type="text/javascript">
-      const segments = 1;
-      const parts = location.pathname
-        .split('/')
-        .filter((x) => x !== '')
-        .filter((x, i) => i < segments);
-
-      const url = `/${parts.join('/')}`;
-      sessionStorage.redirect = location.href;
-      location.href = '/';
+      sessionStorage.setItem('redirect', location.href);
+      location.replace('/');
     </script>
   </head>
 
