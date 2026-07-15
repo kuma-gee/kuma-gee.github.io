@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
-const browserBuffer = {
-  from: (input: string) => input,
-};
-
-(globalThis as unknown as { Buffer?: typeof browserBuffer }).Buffer ??=
-  browserBuffer;
 
 interface BlogMeta {
   title: string;
@@ -59,11 +51,53 @@ const emptyMeta: BlogMeta = {
   tags: [],
 };
 
+function parseFrontmatter(raw: string): { data: Partial<BlogMeta>; content: string } {
+  if (!raw.startsWith("---\n")) {
+    return { data: {}, content: raw };
+  }
+
+  const endMarker = "\n---\n";
+  const end = raw.indexOf(endMarker, 4);
+
+  if (end === -1) {
+    return { data: {}, content: raw };
+  }
+
+  const frontmatter = raw.slice(4, end);
+  const content = raw.slice(end + endMarker.length);
+  const data: Partial<BlogMeta> = {};
+
+  for (const line of frontmatter.split("\n")) {
+    const separator = line.indexOf(":");
+
+    if (separator === -1) {
+      continue;
+    }
+
+    const key = line.slice(0, separator).trim();
+    const value = line.slice(separator + 1).trim();
+
+    if (key === "title" || key === "date" || key === "excerpt") {
+      data[key] = value.replace(/^"|"$/g, "");
+    }
+
+    if (key === "tags") {
+      data.tags = value
+        .replace(/^\[|\]$/g, "")
+        .split(",")
+        .map((tag) => tag.trim().replace(/^"|"$/g, ""))
+        .filter(Boolean);
+    }
+  }
+
+  return { data, content };
+}
+
 async function loadBlog(source: BlogSource): Promise<BlogPost> {
   const response = await fetch(source.url);
   const raw = await response.text();
-  const parsed = matter(raw);
-  const data = parsed.data as Partial<BlogMeta>;
+  const parsed = parseFrontmatter(raw);
+  const data = parsed.data;
 
   return {
     slug: source.slug,
