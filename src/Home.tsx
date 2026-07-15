@@ -1,4 +1,5 @@
 import { SocialIcon } from "react-social-icons";
+import { Link } from "react-router-dom";
 
 interface Game {
   id: number;
@@ -36,9 +37,16 @@ const storeUrl = (id: number) => `https://store.steampowered.com/app/${id}`;
 function Home() {
   return (
     <div
-      className="w-full h-full flex flex-col text-slate-200 text-center"
+      className="relative w-full h-full flex flex-col text-slate-200 text-center"
       style={{}}
     >
+      <Link
+        to="/blog"
+        className="absolute right-4 top-4 z-10 text-sm text-slate-200/60 underline-offset-4 hover:text-slate-200 hover:underline"
+      >
+        Blogs
+      </Link>
+
       <div
         className="flex flex-col gap-8 p-8 grow justify-center items-center"
         style={{
