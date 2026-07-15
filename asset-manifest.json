@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a1e69b4.css",
-    "main.js": "/static/js/main.dc80de9a.js",
-    "static/js/787.8b53d3d8.chunk.js": "/static/js/787.8b53d3d8.chunk.js",
+    "main.css": "/static/css/main.e58dc38d.css",
+    "main.js": "/static/js/main.b6a2ce58.js",
+    "static/js/235.1c3a8ff3.chunk.js": "/static/js/235.1c3a8ff3.chunk.js",
+    "static/media/2026-07-15-reflect-office.md": "/static/media/2026-07-15-reflect-office.160826e2994616ab8f4f.md",
+    "static/media/2026-07-14-reflect-machine.md": "/static/media/2026-07-14-reflect-machine.12e355ef929331480ef1.md",
     "index.html": "/index.html",
-    "main.5a1e69b4.css.map": "/static/css/main.5a1e69b4.css.map",
-    "main.dc80de9a.js.map": "/static/js/main.dc80de9a.js.map",
-    "787.8b53d3d8.chunk.js.map": "/static/js/787.8b53d3d8.chunk.js.map"
+    "main.e58dc38d.css.map": "/static/css/main.e58dc38d.css.map",
+    "main.b6a2ce58.js.map": "/static/js/main.b6a2ce58.js.map",
+    "235.1c3a8ff3.chunk.js.map": "/static/js/235.1c3a8ff3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a1e69b4.css",
-    "static/js/main.dc80de9a.js"
+    "static/css/main.e58dc38d.css",
+    "static/js/main.b6a2ce58.js"
   ]
 }
