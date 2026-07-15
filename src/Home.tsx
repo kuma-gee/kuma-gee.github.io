@@ -20,6 +20,12 @@ const games: Game[] = [
     description:
       "A typing game where you climb the corporate ladder and become the next ceo.",
   },
+  {
+    id: 4797040,
+    title: "One vs All",
+    description:
+      "Asymmetric local VR party game where the VR player plays against the non-VR players in various mini-games.",
+  },
 ];
 
 const socials = [
