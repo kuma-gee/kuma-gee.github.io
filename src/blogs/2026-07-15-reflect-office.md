@@ -45,8 +45,8 @@ If I don't decide that, it might never get finished.
 # Local Indie Area
 
 I've also tried showing the game at a local indie event, and the reception was... muted. I guess the game is a bit 
-too niche for the general audience of these events. It wasn't because of me being an introvert and much advertising it
-or anything...probably. Talking to the other developers there pictured the same image. They purposely show only
+too niche for the general audience of these events. It wasn't because of me being an introvert and not much advertising
+it or anything...probably. Talking to the other developers there pictured the same image. They purposely show only
 specific types of games on these events that have a broader appeal, titles that matched the event's demographic.
 
 It was a valuable lesson: know your venue as much as you know your game. Without a game that is appealing to a broader
@@ -59,7 +59,10 @@ would have turned out when I had clear target audience in mind. I've tuned this 
 for as many people as possible. Not just for the hardcore typist out there, but also for the casual ones.
 
 I guess that will always be the dilemma when developing games. You will never know how a game would have turned out
-if you have decided on a different route. So I want to focus more on the following things for my next games
+if you have decided on a different route. I had an exciting idea of turning this into a roguelike typing game...but
+it was already too late for that.
+
+So I want to focus more on the following things for my next games
 
 - **Explore Different Directions Early**
 Instead of committing to one path and feeling trapped later, I want to prototype multiple approaches in the beginning.

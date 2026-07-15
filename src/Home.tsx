@@ -87,7 +87,9 @@ function Home() {
               <img
                 src={imageUrl(game.id)}
                 alt={game.title}
-                className="rounded-md shadow-md"
+                width="460"
+                height="215"
+                className="aspect-[460/215] w-full rounded-md bg-slate-800 object-cover shadow-md"
               />
               <div className="flex flex-col gap-2">
                 <span className="font-bold">{game.title}</span>
